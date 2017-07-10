@@ -1,0 +1,9 @@
+wot:
+  build: .
+  ports:
+    - '4443:4443'
+  environment:
+    NODE_ENV: dev
+  volumes:
+    - .:/home/root/wot
+    - /home/root/wot/node_modules
